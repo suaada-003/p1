@@ -3,10 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h1></h1>
+    <title>GrowthHive | Digital Marketing Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <nav class="navbar">
+        <div class="logo">GROWTH<span>HIVE</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+        <a href="#contact" class="nav-btn">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <span class="badge">Digital Marketing Agency</span>
+            <h1>Scale your brand with <br><span class="highlight">Digital Marketing.</span></h1>
+            <p>We help ambitious businesses grow using social media, SEO, and content strategies that move the needle.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Work With Us</a>
+            </div>
+        </section>
+
+        <section id="process" class="process">
+            <h2 class="section-title">Our Process</h2>
+            <div class="process-container">
+                <div class="process-box">
+                    <span class="step-num">01</span>
+                    <h3>Strategy</h3>
+                    <p>We audit your brand and plan a path to market dominance.</p>
+                </div>
+                <div class="process-box">
+                    <span class="step-num">02</span>
+                    <h3>Execution</h3>
+                    <p>Our team builds high-converting ads and viral content.</p>
+                </div>
+                <div class="process-box">
+                    <span class="step-num">03</span>
+                    <h3>Growth</h3>
+                    <p>We scale your budget for maximum ROI.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>SEO & Search</h3>
+                    <p>Get found on the first page of Google.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Social Content</h3>
+                    <p>TikTok and Instagram management that converts.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Paid Media</h3>
+                    <p>Strategic ad spending on Meta and Google.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-card">
+                <h2>Ready to start?</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Business Email" required>
+                    <textarea placeholder="Your Project Details..." rows="4"></textarea>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GrowthHive. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
