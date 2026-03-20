@@ -23,13 +23,13 @@ html, body {
     padding: 15px 5%;
     background-color: rgba(13, 13, 13, 0.95);
     backdrop-filter: blur(10px);
-    position: sticky; /* Makes it stay at top */
+    
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #222;
 }
 
-.logo { font-size: 1.2rem; font-weight: 900; letter-spacing: -1px; }
+.logo { font-size: 3.5rem; font-weight: 900; letter-spacing: -1px; }
 .logo span { color: #ccff00; }
 
 .nav-links { display: flex; list-style: none; }
