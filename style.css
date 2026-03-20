@@ -1,0 +1,136 @@
+/* --- RESET & FIXED OVERFLOW --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Fixes horizontal scroll */
+    background-color: #0d0d0d;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* --- STICKY NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky; /* Makes it stay at top */
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo { font-size: 1.2rem; font-weight: 900; letter-spacing: -1px; }
+.logo span { color: #ccff00; }
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: #999; font-size: 0.9rem; font-weight: 600; }
+
+.nav-btn {
+    background-color: #ccff00;
+    color: black !important;
+    padding: 8px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 5%;
+}
+
+.badge { color: #ccff00; letter-spacing: 2px; font-size: 0.7rem; margin-bottom: 15px; text-transform: uppercase; }
+
+.hero h1 {
+    font-size: clamp(2rem, 8vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.highlight { color: #ccff00; }
+
+.hero p { color: #888; max-width: 500px; margin-bottom: 30px; font-size: 1rem; }
+
+/* --- SECTION 2: PROCESS (WITH HOVER) --- */
+.process { padding: 80px 5%; background-color: #111; }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+
+.process-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows stacking on phones */
+    gap: 20px;
+    justify-content: center;
+}
+
+.process-box {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 280px; /* Forces stack on small screens */
+    border: 1px solid #222;
+    transition: all 0.3s ease;
+}
+
+.process-box:hover {
+    border-color: #ccff00;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(204, 255, 0, 0.1);
+}
+
+.step-num { font-size: 2rem; font-weight: 900; color: #333; display: block; margin-bottom: 10px; }
+
+/* --- SERVICES --- */
+.services { padding: 80px 5%; }
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.service-card { border: 1px solid #222; padding: 30px; border-radius: 20px; }
+
+/* --- CONTACT --- */
+.contact { padding: 80px 5%; background-color: #111; }
+.contact-card { max-width: 500px; margin: 0 auto; text-align: center; }
+input, textarea { width: 100%; padding: 12px; margin-top: 15px; background: #1a1a1a; border: 1px solid #333; color: white; border-radius: 8px; }
+
+.btn-primary {
+    background-color: #ccff00;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- FOOTER --- */
+footer { text-align: center; padding: 30px; font-size: 0.8rem; color: #444; }
+
+/* --- MOBILE SPECIFIC FIXES --- */
+@media (max-width: 600px) {
+    .nav-links { display: none; } /* Hide text links, keep Contact button */
+    .hero { padding-top: 100px; }
+    .process-box, .service-card { padding: 20px; }
+}
