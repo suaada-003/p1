@@ -1,4 +1,4 @@
-/* 1. THE FOUNDATION (Fixes Overflow) */
+/* 1 */
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +9,13 @@
 html, body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden; /* This stops the horizontal shaking/scrolling */
-    background-color: #F8FAFC; /* Clean Cloud White */
-    color: #1E293B; /* Deep Slate Blue */
+    overflow-x: hidden; 
+    background-color: #F8FAFC; 
+    color: #1E293B; 
     scroll-behavior: smooth;
 }
 
-/* 2. STICKY NAVBAR (Corrected for Inspection) */
+/*navbar*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@ html, body {
 .nav-links { 
     display: flex; 
     list-style: none;
-    gap: 20px; /* Modern way to space links */
+    gap: 20px; 
 }
 
 .nav-links a { 
@@ -94,7 +94,7 @@ html, body {
     line-height: 1.1;
     color: #0F172A;
     margin-bottom: 20px;
-    animation: float 4s ease-in-out infinite; /* Cute Floating Effect */
+    animation: float 4s ease-in-out infinite; 
 }
 
 @keyframes float {
@@ -113,10 +113,10 @@ html, body {
       margin-bottom: 30px;
        font-size: 1.1rem; }
 
-/* 4. SECTION 2: PROCESS (Hover Scaling) */
+/* SECTION 2 */
 section {
     padding: 100px 8%;
-    scroll-margin-top: 80px; /* Fixes "jumping" under navbar */
+    scroll-margin-top: 80px; 
 }
 
 .section-title { text-align: center;
@@ -128,14 +128,14 @@ section {
 
 .process-container {
     display: flex;
-    flex-wrap: wrap; /* Allows stacking on phones */
+    flex-wrap: wrap; 
     gap: 25px;
 }
 
 .process-box {
     background-color: #FFFFFF;
     padding: 40px;
-    border-radius: 30px; /* Rounder = Cuter */
+    border-radius: 30px; 
     flex: 1;
     min-width: 280px;
     border: 1px solid #F1F5F9;
@@ -148,7 +148,14 @@ section {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
-.step-num { font-size: 2.5rem; font-weight: 800; color: #E2E8F0; display: block; margin-bottom: 10px; transition: 0.3s; }
+.step-num { font-size: 2.5rem;
+     font-weight: 800; 
+     color: #E2E8F0;
+      display: block;
+       margin-bottom: 10px;
+        transition: 0.3s;
+     }
+
 .process-box:hover .step-num { color: #7C3AED; }
 
 /* 5. SERVICES GRID */
@@ -168,11 +175,11 @@ section {
 
 .service-card:hover { border-color: #EC4899; transform: scale(1.02); }
 
-/* 6. CONTACT CARD */
+/*  CONTACT CARD */
 
 .contact { 
     padding: 100px 8%; 
-    /* Same "Cloud" background as the Hero */
+
     background: radial-gradient(circle at top right, #fdf2f8, transparent),
                 radial-gradient(circle at bottom left, #eef2ff, transparent);
     background-color: #F8FAFC; 
@@ -181,11 +188,11 @@ section {
 .contact-card { 
     max-width: 600px; 
     margin: 0 auto; 
-    background: white; /* Keeps the form clean and readable */
+    background: white; 
     padding: 40px; 
     border-radius: 40px; 
-    border: 1px solid #FFFFFF; /* Makes it look extra sharp */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04); /* Deeper shadow for a "floating" look */
+    border: 1px solid #FFFFFF; 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04); 
 }
 
 input, textarea { 
@@ -219,12 +226,12 @@ input, textarea {
     box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
 }
 
-/* 7. FOOTER */
+/*  FOOTER */
 footer { text-align: center; padding: 40px; color: #94A3B8; font-size: 0.9rem; }
 
-/* 8. MOBILE RESPONSIVE FIXES (Corrected) */
+/*  MOBILE RESPONSIVE FIXES */
 @media (max-width: 768px) {
-    /* We DON'T hide the nav anymore! We just adjust spacing. */
+
     .navbar { padding: 15px 5%; }
     
     .nav-links {
@@ -246,10 +253,10 @@ footer { text-align: center; padding: 40px; color: #94A3B8; font-size: 0.9rem; }
     }
 }
 
-/* Very Small Phones Fix */
+
 @media (max-width: 450px) {
     .navbar {
-        flex-direction: column; /* Stack logo over links for tiny screens */
+        flex-direction: column;
         gap: 10px;
     }
     .nav-links {
